@@ -9,12 +9,7 @@ class Bomb extends React.Component {
   }
   
   render()  {
-    var pushOut;
-    if (this.state.secondsLeft === 0) {
-      pushOut = <h1>Boom!</h1>
-    } else {
-      pushOut = <h1>{this.state.secondsLeft} seconds left before I go boom!</h1>
-    }
+    const pushOut = this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
     return(
       <div>
         {pushOut}
@@ -24,3 +19,4 @@ class Bomb extends React.Component {
 }
 
 module.exports = Bomb
+
