@@ -9,9 +9,7 @@ class Bomb extends React.Component {
     }
     render() { 
         return (
-            <div>{if this.state.secondsLeft === 0 return 'Boom!'
-                else 
-                return this.state.secondsLeft + ' seconds left before I go boom!'}</div>
+            <div>{this.state.secondsLeft === 0 ? 'Boom!' : this.state.secondsLeft + ' seconds left before I go boom!'}</div>
         )
     }
 }
