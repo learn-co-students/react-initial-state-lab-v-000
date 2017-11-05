@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
  
-export default class Bomb extends React.Component{
+export default class Bomb extends Component {
   constructor(props){
     super()
     this.state = {
@@ -17,7 +17,9 @@ export default class Bomb extends React.Component{
       msg = 'Boom!'
     }
     return(
-      <div>{msg}</div>
-      )  
-    }
-  };
+      <div>
+        {msg}
+      </div>
+    )  
+  }
+};
