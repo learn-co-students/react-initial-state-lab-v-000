@@ -9,8 +9,13 @@ class Bomb extends React.Component{
     }
   }
 
+
+
   render(){
-    return <p>{this.state.secondsLeft ? this.state.secondsLeft + " seconds left before I go boom!" : "Boom!"}</p>
+    let secondsLeft = this.state.secondsLeft;
+    const boomMessage = secondsLeft ? secondsLeft + " seconds left before I go boom!" : "Boom!";
+
+    return <p>{boomMessage}</p>
   }
 }
 
