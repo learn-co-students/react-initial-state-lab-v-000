@@ -27,11 +27,11 @@ describe('<Bomb />', function () {
   });
 
   it('render the correct text when the timer is not 0', function () {
-    expect(wrapper.text()).to.equal('120 seconds left before I go boom!');
+    expect(wrapper.text()).to.equal(' 120 seconds left before I go boom!');
   });
 
   it('render the correct text when the timer is 0', function () {
     const wrapper = shallow(<Bomb initialCount={0} />);
-    expect(wrapper.text()).to.equal('Boom!');
+    expect(wrapper.text()).to.equal(' Boom!');
   });
 });
