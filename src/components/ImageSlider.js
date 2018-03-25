@@ -1,1 +1,1 @@
-// Bomb Component Code Goes Here
+// Image Slider Component Code Goes Here
