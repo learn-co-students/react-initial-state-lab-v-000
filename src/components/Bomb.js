@@ -1,1 +1,30 @@
-// Bomb Component Code Goes Here
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class Bomb extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      secondsLeft: props.initialCount
+    }
+
+  }
+
+  render() {
+    if (this.state.secondsLeft > 0) {
+    return (
+      `${this.state.secondsLeft} seconds left before I go boom!`
+    )} else {
+      return (
+        'Boom!'
+      )
+    }
+  }
+}
+
+Bomb.propTypes = {
+  initialCount: PropTypes.number.isRequired
+}
+
+export default Bomb;
