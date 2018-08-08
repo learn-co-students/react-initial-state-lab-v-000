@@ -11,9 +11,7 @@ export default class Bomb extends Component {
   }//end constructor
 
    render() {
-     //It should only render out the text 'I am on slide <CURRENT_SLIDE>', where <CURRENT_SLIDE> is the value of this.state.currentSlideIndex.
      return (
-       //<div>{this.state.secondsLeft} seconds left before I go boom!</div>
        <div>
        { this.state.secondsLeft>0 ? (
           <div>{this.state.secondsLeft} seconds left before I go boom!</div>
