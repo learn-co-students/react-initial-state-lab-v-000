@@ -10,16 +10,15 @@ export default class Bomb extends Component {
         }
     }
     
-    whatToSay = () => {
-        debugger;
-        let informTime = `${this.props.initialCount} seconds left before I go boom!`
+    message = () => {
+        let informTime = `${this.state.secondsLeft} seconds left before I go boom!`
         let boom = "Boom!"
         return (this.state.secondsLeft > 0) ? informTime : boom 
     }
 
     render() {
         return (
-            <div>{this.whatToSay()}</div>
+            <div>{this.message()}</div>
         )
     }
 
