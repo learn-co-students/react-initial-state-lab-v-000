@@ -14,7 +14,7 @@
     "mocha-multi": "^1.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^1.1.5",
     "webpack": "^3.11.0"
   },
   "scripts": {
@@ -34,5 +34,8 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "mocha": "^5.2.0",
     "sinon": "^6.1.0"
+  },
+  "resolutions": {
+    "babel/runtime": "7.0.0-beta.46"
   }
 }
