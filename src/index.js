@@ -7,7 +7,8 @@ import Bomb from './components/Bomb';
 ReactDOM.render(
   <div>
     <ImageSlider></ImageSlider>
-    <Bomb initialCount={120} />
+    <br></br>
+    <Bomb initialCount={0} />
   </div>,
   document.getElementById('global')
 );
