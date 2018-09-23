@@ -10,12 +10,6 @@ export default class Bomb extends Component {
     }
   }
 
-  // clickDiv = () => {
-  //   this.setState({
-  //     currentSlideIndex: 0
-  //   })
-  // }
-
   render() {
     if (this.state.secondsLeft > 0){
       return (
