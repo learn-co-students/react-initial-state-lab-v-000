@@ -11,7 +11,7 @@ export default class ImageSlider extends Component {
     render() {
         return(
             <div>
-                CURRENT_SLIDE = this.state.currentSlideIndex
+                
             </div>
         )
     }
