@@ -15,8 +15,4 @@ export default class ImageSlider extends React.Component {
 			<h1>I am on slide {this.state.currentSlideIndex}</h1>
 		)
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f98d19685c3c015a8850fb8ddcca2ebd71638e39
