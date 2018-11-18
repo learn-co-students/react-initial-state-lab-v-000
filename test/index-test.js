@@ -38,6 +38,6 @@ describe('<Bomb />', () => {
 
   it('render the correct text when the timer is 0', () => {
     const wrapper = shallow(<Bomb initialCount={0} />);
-    expect(wrapper.text()).to.equal('Boom!');
+    expect(wrapper.text()).to.equal(' Boom!');
   });
 });
