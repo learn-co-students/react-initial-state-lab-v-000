@@ -5,6 +5,7 @@ class Bomb extends React.Component {
     super()
     this.state = {
       secondsLeft: props.initialCount
+      //initial state has property of secondsLeft being set to initialCount prop of Bomb comp
     }
   }
   render() {
@@ -12,6 +13,7 @@ class Bomb extends React.Component {
     `${this.state.secondsLeft} seconds left before I go boom!`
     return (
       <p>{message}</p>
+      //render text of how much time left where seconds left is value of secondsLeft
     )
   }
 }
