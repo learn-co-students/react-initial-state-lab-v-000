@@ -6,22 +6,22 @@ export default class Bomb extends React.Component {
     this.state = { secondsLeft: this.props.initialCount }
   }
 
-  componentDidMount() {
-    this.timerID = setInterval(
-      () => this.timer(),
-      1000
-    );
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  timer() {
-    if (this.state.secondsLeft > 0) {
-      this.setState({ secondsLeft: this.state.secondsLeft -1 })
-    }
-  }
+  // componentDidMount() {
+  //   this.timerID = setInterval(
+  //     () => this.timer(),
+  //     1000
+  //   );
+  // }
+  //
+  // componentWillUnmount() {
+  //   clearInterval(this.timerID);
+  // }
+  //
+  // timer() {
+  //   if (this.state.secondsLeft > 0) {
+  //     this.setState({ secondsLeft: this.state.secondsLeft -1 })
+  //   }
+  // }
 
   render() {
     if (this.state.secondsLeft == 0 ) {
