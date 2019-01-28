@@ -24,10 +24,7 @@ export default class Bomb extends React.Component {
   // }
 
   render() {
-    if (this.state.secondsLeft == 0 ) {
-      return <h1><font color="red">Boom!</font></h1>
-    } else {
-    return <h1><font color="blue">{ this.state.secondsLeft } seconds left before I go boom!</font></h1>
-    }
+    const message =  (this.state.secondsLeft === 0 ) ? <h1><font color="red">Boom!</font></h1> : <h1><font color="blue">{ this.state.secondsLeft } seconds left before I go boom!</font></h1>
+    return <div>{ message }</div>
   }
 }
