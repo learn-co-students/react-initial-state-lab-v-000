@@ -7,11 +7,17 @@ export default class Bomb extends Component {
       super(props)
 
       this.state = {
-       initialCount: this.props.value,
+       secondsLeft: this.props.initialCount,
       }
     }
     //
-    // handleClick = () => {
+     handleState = () => {
+       if (this.state.secondsLeft === 0) {
+       return 'Boom!'
+      } else {
+      return `${this.state.secondsLeft} seconds left before I go boom!`
+     }
+   }
     //   this.setState({
     //     color: '#333'
     //   })
@@ -19,9 +25,8 @@ export default class Bomb extends Component {
 
     render() {
       return (
-        <div className="">
-      //  style={{backgroundColor: this.state.color}}
-      //   onClick={this.handleClick}>
+        <div>
+          <h1>{this.handleState()}</h1>
         </div>
       )
     }

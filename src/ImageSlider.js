@@ -4,11 +4,11 @@ import React, { Component } from 'react';
 
 export default class ImageSlider extends Component {
 
-    constructor(props) {
-      super(props)
+    constructor() {
+      super()
 
       this.state = {
-    //   initialCount: this.props.value,
+      currentSlideIndex: 0
       }
     }
     //
@@ -18,11 +18,14 @@ export default class ImageSlider extends Component {
     //   })
     // }
 
+
+
+
     render() {
       return (
         <div className="">
-      //  style={{backgroundColor: this.state.color}}
-      //   onClick={this.handleClick}>
+
+          <h1>I am on slide {this.state.currentSlideIndex}</h1>
         </div>
       )
     }
