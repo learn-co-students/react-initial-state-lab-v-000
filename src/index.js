@@ -10,3 +10,11 @@ ReactDOM.render(
   </div>,
   document.getElementById('root')
 );
+function boom () {
+  if({secondsLeft} > 0); {
+    <div>{secondsLeft} seconds left before I go boom!</div>
+  }
+  if({secondsLeft} === 0); {
+    <div>Boom!</div>
+  }
+}
