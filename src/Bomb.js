@@ -1,4 +1,5 @@
 // your Bomb code here!
+import React, { Component } from 'react';
 
 class Bomb extends Component{
  constructor(props){
@@ -9,7 +10,7 @@ class Bomb extends Component{
  }
  render() {
     
-        const message = this.state.secondsLeft === 0? 'Boom!' : `${this.state.secondsLeft} second left before I go boom!`;
+        const message = this.state.secondsLeft === 0? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`;
  return(
      <div>{message}</div>
     )
