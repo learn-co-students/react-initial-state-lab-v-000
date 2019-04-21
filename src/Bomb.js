@@ -1,22 +1,22 @@
 // your Bomb code here!
-import React from 'react';
+import React from 'react'
 
 class Bomb extends React.Component {
-
   constructor(props) {
-    super() 
+    super(props)
     this.state = {
-      secondsLeft: props.initialCount
+      secondsLeft: this.props.initialCount
     }
   }
 
-  render () {
-    const timeLeft = this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
-
+  render() {
+    const message = this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
     return (
-        <div>{timeLeft}</div>
+     <div>
+       {message}
+      </div>
     )
+  
   }
 }
-
-export default Bomb
+export default Bomb;

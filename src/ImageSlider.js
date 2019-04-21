@@ -2,7 +2,6 @@
 import React from 'react'
 
 class ImageSlider extends React.Component {
-
   constructor() {
     super() 
     this.state = {
@@ -10,11 +9,13 @@ class ImageSlider extends React.Component {
     }
   }
 
-  render () {
+  render() {
     return (
-      <div>I am on slide {this.state.currentSlideIndex}</div>
+      <div>
+        <h1>I am on slide {this.state.currentSlideIndex}</h1>
+        </div>
     )
   }
-}
 
-export default ImageSlider
+}
+export default ImageSlider;
