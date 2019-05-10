@@ -10,8 +10,8 @@ export default class Bomb extends Component {
     }
  
     render() {
-        
-        // let secondsLeft = this.props.initialCount;
-        return this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
+        return (
+            this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
+        )
     }
 }
