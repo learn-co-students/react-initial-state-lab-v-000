@@ -10,12 +10,6 @@ export default class Bomb extends Component {
         }
     }
 
-    initialCount = () => {
-        const initialCount = 120
-    }
-
-
-
     render() {
         if (this.state.secondsLeft === 0) {
             return <div>Boom!</div>
