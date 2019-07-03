@@ -9,17 +9,10 @@ export default class ImageSlider extends Component {
     }
   }
 
-  // incrementCount() {
-  //   this.setState((state) => {
-  //     // Important: read `state` instead of `this.state` when updating.
-  //     return {count: state.count + 1}
-  //   });
-  // }
-
 
   render() {
-    return(
-  'I am on slide {<CURRENT_SLIDE>{this.state.currentSlideIndex}/>} '
+    return (
+      <p>I am on slide {this.state.currentSlideIndex}</p>
   )
   }
 }
