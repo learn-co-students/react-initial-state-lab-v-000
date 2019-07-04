@@ -1,33 +1,23 @@
 // your Bomb code here!
-import React, { Component } from 'react';
+import React from 'react';
 
+class Bomb extends React.Component {
 
-class Bomb extends Component{
+  constructor(props) {
+    super()
 
-    constructor(props){
-        super(props)
-        this.state = {
-            secondsLeft: this.props.initialCount
-        }
-        this.update = this.update.bind(this)
-        this.beginTimer()
+    this.state = {
+      secondsLeft: props.initialCount
     }
+  }
 
-    beginTimer = () => setInterval(this.update, 1000)
+  render() {
+    const message = this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`;
 
-    update = () => {
-        const newCount = this.state.secondsLeft - 1
-        if(newCount >= 0){
-            this.setState({
-                secondsLeft: newCount
-            })
-        }
-    }
-
-    render(){
-        return this.state.secondsLeft === 0 ? "Boom!" :`${this.state.secondsLeft} seconds left before I go boom!`
-    }
-
+    return (
+      <div>{message}</div>
+    )
+  }
 }
 
-export default Bomb
+export default Bomb;
