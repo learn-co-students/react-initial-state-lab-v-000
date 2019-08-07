@@ -11,7 +11,7 @@ export default class Bomb extends Component {
 
 	decrementTimer = () => {
 			this.setState({
-				secondsLeft: this.state.initialCount - 1
+				secondsLeft: this.state.secondsLeft - 1
 		})
 	}
 
@@ -20,26 +20,9 @@ export default class Bomb extends Component {
 		const message = this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
 
 		return (
-			<div>
+			<div onClick={this.decrementTimer}>
 				{ message }
 			</div>
-
-
-
-
-			// <div onClick={this.decrementTimer}>
-			// 	`${this.state.secondsLeft} seconds left before I go boom!`
-			// </div>
-			 
-
-
-			// 'hello'
-
-			// if ( this.state.initialCount > 0 ) {
-			// `${this.state.decrementTimer} seconds before I go boom!`
-			// } else {
-			// 	'Boom!'
-			// }
 		)
 	}
 
