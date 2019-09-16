@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class ImageSlider extends Component {
-
-  constructor(props) {
-    super(props)
+  //b/c imported component, dont need React.Component here
+  constructor() {
+    super();
     this.state = {
       currentSlideIndex: 0
-    }
+    };
   }
-
   render() {
-    const currentSlide = this.state.currentSlideIndex
-    return (
-      <h1>I am on slide {currentSlide}</h1>
-    )
+    return `I am on slide ${this.state.currentSlideIndex}`;
   }
-
 }
