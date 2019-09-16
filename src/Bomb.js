@@ -1,28 +1,16 @@
-import React, { Component } from 'react';
+
+import React, { Component } from "react";
 
 export default class Bomb extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      secondsLeft: props.initialCount
-    }
-  }
+  state = {
+    secondsLeft: this.props.initialCount
+  }; //only using props to set initial state, just tried out w/o constructor
 
-
-
+  //return goes at beg of ternary statement
+  //make sure to access this.state, not props
   render() {
-    const timeLeft = this.state.secondsLeft;
-    let message;
-    if (timeLeft === 0) {
-      message = 'Boom!'
-    } else {
-      message = `${timeLeft} seconds left before I go boom!`
-    }
-
-
-    return (
-      <h1>{message}</h1>
-    )
+    return this.state.secondsLeft === 0
+      ? "Boom!"
+      : `${this.state.secondsLeft} seconds left before I go boom!`;
   }
-
 }
