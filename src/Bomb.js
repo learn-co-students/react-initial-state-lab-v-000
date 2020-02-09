@@ -21,7 +21,7 @@ export default class Bomb extends Component {
 
   display = () => {
     if (this.state.secondsLeft > 0) {
-      return `${this.state.secondsLeft} seconds left before I go boom!`
+      return this.state.secondsLeft + " seconds left before I go boom!"
     } else {
       return "Boom!"
     }
@@ -35,5 +35,4 @@ export default class Bomb extends Component {
       </div>
     )
   }
-  
 }
