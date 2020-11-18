@@ -7,7 +7,7 @@ export default class Bomb extends Component {
   }
 
   stateText() {
-    return this.state.secondsLeft
+    return this.state.secondsLeft > 0
       ? `${this.state.secondsLeft} seconds left before I go boom!`
       : "Boom!";
   }
