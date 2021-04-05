@@ -1,1 +1,7 @@
-// your ImageSlider code here!
+const { Component } = require("react");
+
+class ImageSlider extends Component {
+
+}
+
+export default ImageSlider
