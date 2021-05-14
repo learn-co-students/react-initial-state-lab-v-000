@@ -2,7 +2,7 @@ import React, { Component }  from 'react';
 // your ImageSlider code here!
 export default class ImageSlider extends React.Component{
     constructor(props){
-        super();
+        super(props);
         this.state={
             currentSlideIndex: 0
         }
